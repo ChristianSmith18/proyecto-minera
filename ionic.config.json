@@ -1,5 +1,7 @@
 {
   "name": "IonTestTI",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

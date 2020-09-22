@@ -1,17 +1,29 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title> Formularios </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card mode="ios" button (click)="openFormModal()">
+    <ion-img
+      src="https://cdn01.brunel.net/-/media/images/global/verticals/mining/construction-mining.jpg?rev=2615c652a89a4964a32b4c6dc53d7cfb&cx=0.5&cy=0.5&cw=640&ch=360&hash=0F5ED02B2E5EF9B6F6053F3F7E23A43D"
+      alt="Icono"
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-title>Formulario Semanal</ion-card-title>
+      <ion-card-subtitle>Disponible hasta 27-09-2020</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card mode="ios" button (click)="openFormModal()">
+    <ion-img
+      src="https://www.azom.com/images/Article_Images/ImageForArticle_18547(1).jpg"
+      alt="Icono"
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-title>Formulario Mensual</ion-card-title>
+      <ion-card-subtitle>Disponible hasta 30-09-2020</ion-card-subtitle>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

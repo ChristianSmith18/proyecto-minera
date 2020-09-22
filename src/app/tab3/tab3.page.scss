@@ -1,0 +1,33 @@
+.user {
+  --min-height: 100px !important;
+
+  ion-avatar {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+ion-item,
+ion-list {
+  --background: transparent;
+  background: transparent;
+}
+
+ion-list {
+  margin-top: 25px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  ion-label {
+    font-family: 'Noto Serif', serif;
+    color: #b4b4b4;
+  }
+}

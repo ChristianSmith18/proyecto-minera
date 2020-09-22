@@ -1,0 +1,23 @@
+.img-container {
+  text-align: center;
+  // background-color: #F6F6F6;
+  background-color: #090909;
+
+  img {
+    filter: invert(1);
+    width: 70%;
+  }
+}
+
+input,
+textarea {
+  background: #3b3b3b;
+}
+
+label,
+input,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  color: white;
+}

@@ -1,17 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title> Hallazgo </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card mode="ios">
+    <img *ngIf="img64" [src]="img64" alt="" />
+    <div *ngIf="!img64" class="img-container" (click)="openCamera()">
+      <img
+        src="https://p.kindpng.com/picc/s/244-2446316_computer-icons-camera-photography-area-text-png-add.png"
+        alt=""
+      />
+    </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-card-content>
+      <div class="field">
+        <label class="label">Título</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Escoga un título descriptivo del hallazgo..."
+          />
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Hallazgo</label>
+        <div class="control">
+          <textarea
+            class="textarea"
+            placeholder="Describa detalladamente el hallazgo..."
+          ></textarea>
+        </div>
+      </div>
+      <button class="button is-info is-fullwidth is-rounded mt-5">
+        Enviar Hallazgo
+      </button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
